@@ -1,32 +1,40 @@
 <script>
-
+	var image1="/nature/nature (1).jpg",image2="/nature/nature (2).jpg",image3="/nature/nature (3).jpg";
+	let generateImage = function(){
+		var i = Math.floor(Math.random()*56);
+		image1 = `/nature/nature (${i}).jpg`;
+		image2 = `/nature/nature (${i+1}).jpg`;
+		image3 = `/nature/nature (${i-1}).jpg`;
+		
+	}
 </script>
 
 <div>
-		<ul>
-			<li>
-				REALISTIC
-			</li>
-			<li>
-				ILLUSTRATION
-			</li>
-			<li>
-				CYBERPUNK
-			</li>
-			<li>
-				AI GENERATED
-			</li>
-		</ul>
+		<div class="images">
+			<img src={image1} alt="">
+			<img src={image2} alt="">
+			<img src={image3} alt="">
+		</div>
 		<div class="submit">
-			<div class="button">
-				Generate Image
+			<div on:click={generateImage} class="button">
+				Generate Images
 			</div>
 		</div>
 		
 </div>
 
 <style>
-	.submit{
+.images{
+	display: flex;
+	justify-content: space-evenly;
+}
+.images img{
+	height: 350px;
+	width: 350px;
+	border-radius: 20px;
+}
+.submit{
+		margin-top: 20px;
 		display: flex;
 		justify-content: center;
 	}
