@@ -5,7 +5,7 @@
 	<nav class="nav">
 		<div class="logo">
 			<img src="../images/image.svg" width="35px" height="35px">
-				Image Generator
+				<strong>Random Image Generator</strong>
 			
 		</div>
 		<div>
@@ -31,6 +31,7 @@
 		padding: 0 20px;
 	}
 	.logo{
+		margin-left: 30px;
 		display: flex;
 		font-size: x-large;
 		font-weight: 450;
@@ -41,6 +42,7 @@
 	top:0;
 	left: 0;
 	position: fixed;
+	height: 48;
 	width: 100vw;
 	display: flex;
 	justify-content: space-between;
@@ -49,7 +51,7 @@
 ul{
 	display: flex;
 	justify-content: space-evenly;
-	margin-right: 50px;
+	margin-right: 40px;
 }
 li{
 	

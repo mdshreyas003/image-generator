@@ -17,7 +17,7 @@
 		</div>
 		<div class="submit">
 			<div on:click={generateImage} class="button">
-				Generate Images
+				Generate Random Images
 			</div>
 		</div>
 		
@@ -25,13 +25,14 @@
 
 <style>
 .images{
+	padding-top: 20px;
 	display: flex;
 	justify-content: space-evenly;
 }
 .images img{
-	height: 350px;
-	width: 350px;
-	border-radius: 20px;
+	height: 300px;
+	width: 450px;
+	border-radius: 10px;
 }
 .submit{
 		margin-top: 20px;
@@ -55,14 +56,17 @@
 	.button{
 		font-size: x-large;
 		font-weight: 500;
-		color: #161618;
-		background: rgba(98, 255, 147, 0.8);
-		padding: 10px 20px;
+		font-style: italic;
+		color: #ffffff;
+		background: rgba(59, 180, 127, 0.8);
+		margin-top: 10px;
+		padding: 5px 10px;
 		border-radius: 5px;
 	}
 	.button:hover{
 		cursor: pointer;
-		background:rgba(107, 244, 150, 0.578);
+		color: rgba(59, 180, 127, 0.8);
+		background:rgba(255, 255, 255, 0.9);
 	}
 
 </style>
